@@ -37,7 +37,7 @@ By standardizing our dataframe, we can make sure all values are roughly in the s
 
 ![ss6](https://github.com/schr0841/CryptoClustering/blob/main/images/ss6.png)
 
-The number of clusters remains unchanged (k=4 for both) but doing PCA on the data first allowed there to be more meaningful clustering of the data. In the un-clustered data there is one data point representing cluster 3 that is close to data from cluster 0, rendering this clustering not useful. The PCA data has the same number of clusters and also two different clusters that represent one data point each, but these points are far away from the other clusters. Therefore PCA does a better job figuring out the underlying important variables in the data and reducing the number of variables based on that. In the non-pca clustering case, it may be that other variables are more meaningful for the clusters rather than the two (7d and 24h price change percentage) that were chosen.
+The number of clusters remains unchanged (k=4 for both) but doing PCA on the data first allowed there to be more meaningful clustering of the data. In the non-PCA data there is one data point representing cluster 3 that is close to data from cluster 0, rendering this clustering not useful. The PCA data has the same number of clusters and also two different clusters that represent one data point each, but these points are far away from the other clusters. Therefore PCA does a better job figuring out the underlying important variables in the data and reducing the number of variables based on that. In the non-pca clustering case, it may be that other variables are more meaningful for the clusters rather than the two (7d and 24h price change percentage) that were chosen.
 
 
 
